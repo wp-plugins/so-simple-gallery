@@ -2,7 +2,7 @@
  * Javascript added to the Visual Editor (TinyMCE)
  *
  * @source: https://www.gavick.com/magazine/adding-your-own-buttons-in-tinymce-4-editor.html#tc-section-4 
- * @since 2014.05.02
+ * @since 1.0
  */
 
 (function() {

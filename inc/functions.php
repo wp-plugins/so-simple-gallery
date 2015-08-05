@@ -46,7 +46,7 @@ function create_so_simple_gallery_cpt() {
  * For the function sosg_register_meta_boxes below I have taken the [demo.php file](https://github.com/rilwis/meta-box/blob/master/demo/demo.php) 
  * of the Meta Box plugin and adapted it for the specific purpose of this SO Simple Gallery Plugin.
  *
- * @since 2014.05.02
+ * @since 1.0
  */
 function sosg_register_meta_boxes( $meta_boxes ) {
 	
@@ -77,7 +77,7 @@ function sosg_register_meta_boxes( $meta_boxes ) {
  * Add custom admin columns to so-simple-gallery Custom Post Type
  *
  * @source: http://justintadlock.com/archives/2011/06/27/custom-columns-for-custom-post-types
- * @since 2014.05.08
+ * @since 1.1.0
  */
 function sosg_edit_admin_columns( $columns ) {
 
@@ -95,7 +95,7 @@ function sosg_edit_admin_columns( $columns ) {
  * Add the shortcode to be used to the admin columns
  *
  * @source: http://justintadlock.com/archives/2011/06/27/custom-columns-for-custom-post-types
- * @since 2014.05.08
+ * @since 1.1.0
  */
 function sosg_manage_admin_columns( $column, $post_id ) {
 	global $post;
@@ -128,7 +128,7 @@ function sosg_manage_admin_columns( $column, $post_id ) {
  * Change the updated messages to add the shortcode to use in
  *
  * @source: http://thomasmaxson.com/update-messages-for-custom-post-types/
- * @since 2014.05.08
+ * @since 1.1.0
  */
 function sosg_update_messages( $messages ) {
     global $post;

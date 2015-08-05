@@ -3,7 +3,7 @@
  * Plugin URI: http://so-wp.com/?p=115
  * Description: With the SO Simple Gallery plugin you can add a beautiful gallery to your Posts or Pages with a simple shortcode.
  * Author: Piet Bos
- * Version: 2015.04.23
+ * Version: 1.1.4
  * Author URI: http://senlinonline.com
  * Text Domain: so-simple-gallery
  * Domain Path: /languages
@@ -32,14 +32,14 @@
  * this error occurs sometimes and completely messes up the Dashboard
  *
  * @source: 3rd comment on wordpress.stackexchange.com/a/70597/2015
- * @since 2014.07.30
+ * @since 1.1.1
  */
 ini_set( 'zlib.output_handler', '' );
 
 /**
  * Prevent direct access to files
  * 
- * @since 2014.05.02
+ * @since 1.0
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * 
  * adapted from example by Thomas Scholz (@toscho) http://wordpress.stackexchange.com/a/95183/2015, Version: 2013.03.31, Licence: MIT (http://opensource.org/licenses/MIT)
  *
- * @since 2014.05.02
+ * @since 1.0
  */
 
 //Only do this when on the Plugins page.
@@ -92,7 +92,7 @@ function sosg_check_admin_notices()
 /**
  * Set-up Action and Filter Hooks
  * 
- * @since 2014.5.02
+ * @since 1.0
  */
 add_action( 'init', 'create_so_simple_gallery_cpt' ); // see inc/functions.php
 
@@ -121,7 +121,7 @@ add_filter( 'post_updated_messages', 'sosg_update_messages' ); // see inc/functi
 /**
  * Load the textdomain
  * 
- * @since 2014.5.02
+ * @since 1.0
  */
 function sosg_init() {
 	load_plugin_textdomain( 'so-simple-gallery', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
@@ -130,7 +130,7 @@ function sosg_init() {
 /**
  * Add menu page
  * 
- * @since 2014.5.02
+ * @since 1.0
  */
 function sosg_add_options_page() {
 
@@ -149,7 +149,7 @@ function sosg_load_custom_admin_style() {
 /**
  * Display a Settings link on the main Plugins page
  * 
- * @since 2014.5.02
+ * @since 1.0
  */
 function sosg_plugin_action_links( $links, $file ) {
 
@@ -165,7 +165,7 @@ function sosg_plugin_action_links( $links, $file ) {
 /**
  * Add the function for the files that need to be included
  * 
- * @since 2014.5.02
+ * @since 1.0
  */
 function sosg_includes() {
 
@@ -185,7 +185,7 @@ function sosg_includes() {
  *
  * modified using http://wpengineer.com/1657/check-if-required-plugin-is-active/ and the _no_wpml_warning function (of WPML)
  *
- * @since 2014.07.30
+ * @since 1.1.1
  */
 
 $plugins = get_option( 'active_plugins' );
@@ -215,7 +215,7 @@ function sosg_no_meta_box_warning() {
 /**
  * Include the TGM Activation Class
  *
- * @since 2014.07.30
+ * @since 1.1.1
  */
 require_once dirname( __FILE__ ) . '/inc/required-plugin.php';
 
@@ -252,7 +252,7 @@ function sosg_register_mce_button( $buttons ) {
  * Add stylesheet for frontend, but only when the shortcode is actually present
  * 
  * @source: https://codex.wordpress.org/Function_Reference/has_shortcode
- * @since 2014.5.02
+ * @since 1.0
  */
 function sosg_load_scripts_and_styles() {
 	global $post;

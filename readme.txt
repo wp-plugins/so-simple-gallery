@@ -3,8 +3,8 @@ Contributors: senlin
 Tags: gallery, css, rollover effect,
 Donate link: http://so-wp.com/donations
 Requires at least: 4.0
-Tested up to: 4.2
-Stable tag: 2015.04.23
+Tested up to: 4.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,22 +84,28 @@ Please open an issue over at [Github](https://github.com/senlin/so-simple-galler
 
 == Changelog ==
 
-= 2015.04.23 =
+= 1.1.4 (2015.08.05) =
+
+* revert to [semantic versioning](http://semver.org/)
+* changed header settings page to h1 (https://make.wordpress.org/plugins/2015/08/03/4-3-change-to-plugin-dashboard-pages/)
+* show 4.3 compatibility
+
+= 1.1.3 (2015.04.23) =
 
 * update TGM Plugin Activation class to 2.4.1 which fixes reported [XSS vulnerability](http://wptavern.com/xss-vulnerability-what-to-do-if-you-buy-or-sell-items-on-themeforest-and-codecanyon) 
 
-= 2015.04.09 =
+= 1.1.2 (2015.04.09) =
 
 * changed logos
 * new banner image for WP.org Repo by [Kyle Szegedi](https://unsplash.com/kyleszegedi)
 
-= 2014.07.30 =
+= 1.1.1 (2014.07.30) =
 
 * added the check for the metabox plugin (all files were there, but had forgotten to build the check for it in)
 * get rid of ob_end_flush() error that sometimes occurs
 * tested up to WP 4.0-beta-2
 
-= 2014.05.08 =
+= 1.1.0 (2014.05.08) =
 
 * polishing
 * add documentation
@@ -107,6 +113,6 @@ Please open an issue over at [Github](https://github.com/senlin/so-simple-galler
 * add language file
 * add screenshots
 
-= 2014.05.04 =
+= 1.0 (2014.05.04) =
 
 * initial release
